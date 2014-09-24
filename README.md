@@ -1,4 +1,4 @@
-My Portfolio on yeoman
+My Portfolio
 =========
 
 

@@ -52,7 +52,7 @@
 ================================================== */
 	body {
 		background: #fff;
-		font: 14px/21px 'Source Sans Pro', sans-serif;
+		font: 14px/21px 'Roboto', sans-serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
@@ -142,7 +142,7 @@
 		border: 1px solid #ccc;
 		padding: 6px 4px;
 		outline: none;
-		font: 13px 'Source Sans Pro', sans-serif;
+		font: 13px 'Roboto', sans-serif;
 		color: #fff;
 		margin: 0;
 		width: 210px;

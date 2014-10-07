@@ -359,6 +359,7 @@ nav a:hover {
 	color: #fff;
 	position: relative;
 	z-index: 150;
+    text-shadow: 0px 0 black, 0px 1px black, 0px 0px black, 0 0px black;
 }
 
 .social-intro {
@@ -554,25 +555,25 @@ span.p-small {
 
 .skill1 {
 	background: #d1d1d1;
-	width: 63%;
+	width: 0%;
 	height: 31px;
 }
 
 .skill2 {
 	background: #c8c7c7;
-	width: 80%;
+	width: 0%;
 	height: 31px;
 }
 
 .skill3 {
 	background: #bdbdbd;
-	width: 85%;
+	width: 0%;
 	height: 31px;
 }
 
 .skill4 {
 	background: #b3b2b2;
-	width: 85%;
+	width: 0%;
 	height: 31px;
 }
 

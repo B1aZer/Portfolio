@@ -2,9 +2,13 @@
   "name": "scrn",
   "version": "0.0.0",
   "dependencies": {
-    "sass-bootstrap": "~3.0.0",
-    "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
+    "animate.css": "~3.2.0",
+    "countto": "*",
+    "jquery-waypoints": "~2.0.5"
   },
-  "devDependencies": {}
+  "homepage": "https://github.com/B1aZer/Portfolio",
+  "authors": [
+    "Dmitry Branitskiy <dmitry.branitskiy@gmail.com>"
+  ],
+  "license": "MIT"
 }

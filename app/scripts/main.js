@@ -31,6 +31,28 @@ $(function ($) {
 	$('.bg1').parallax("50%", 0.1);
 	$('.bg2').parallax("50%", 0.2);
 	$('.bg3').parallax("50%", 0.2);
-	$('.bg4').parallax("50%", 0.1);
+  $('.bg4').parallax("50%", 0.1);
+
+  /* BOUNCERS */
+  $('.bouncer').waypoint(function() {
+    console.log('appear');
+    $(this).each(function(){
+      var animClasses = $(this).data('animation');
+      $(this).addClass('animated activated' + ' ' + animClasses);
+    });
+  }, {
+    offset: ht - 100
+  });
+
+  /* PORTFOLIO */
+  $('.portfolio .thumb .port-link').hover(function () {
+    var overlay = $(this).find('.overlay');
+    var animation = overlay.data('animation');
+    overlay.addClass('animated activated' + ' ' + animation).css({'opacity': 1});
+  }, function () {
+    var overlay = $(this).find('.overlay');
+    var animation = overlay.data('animation');
+    overlay.removeClass('animated activated' + ' ' + animation).animate({'opacity': 0});
+  });
 
 });

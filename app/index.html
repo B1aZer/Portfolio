@@ -23,6 +23,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'> 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
 	<link rel="stylesheet" href="styles/base.css">
 	<link rel="stylesheet" href="styles/skeleton.css">
 	<link rel="stylesheet" href="styles/flexslider.css">
@@ -77,10 +78,11 @@
 	
 	<nav>
 		<ul>
-			<li><a href="#work">Кто мы</a></li>
-			<li><a href="#services">Чем занимаемся</a></li>
-			<li><a href="#services">Наши проекты</a></li>
-			<li><a href="#contact">Как связаться</a></li>
+			<li><a href="#who">Кто мы</a></li>
+			<li><a href="#how">Чем занимаемся</a></li>
+			<li><a href="#what">Наши проекты</a></li>
+			<li><a href="#price">Сколько стоит</a></li>
+			<li><a href="#info">Как связаться</a></li>
 		</ul>
 		
 		<select name="dropdpown" size="1" onChange="scrollTo(this.value)">
@@ -94,7 +96,7 @@
 	</nav>
 	
 	
-	<div id="work">
+	<div id="who">
 		<div class="container">
 		
 			<div class="sixteen columns">
@@ -146,7 +148,7 @@
 	</div>
 	
 	
-	<div id="services">
+	<div id="how">
 		<div class="container">
 		
 			<div class="sixteen columns">
@@ -166,19 +168,19 @@
 			<div class="clear"></div>
 			
 			<div class="serv-list">
-				<div class="one-third column">
+                <div class="one-third column bouncer" data-animation="bounceInLeft">
 					<h3 class="white"><span class="lines">Дизайн</span></h3>
                     <i class="fa service-icon fa-paint-brush fa-4x"></i>
 					<p class="white">He is here. A tremor in the Force. The last time I felt it was in the presence of my old master. Hey, Luke! May the Force be with you. The plans you refer to will soon be back in our hands.</p>
 				</div>
 				
-				<div class="one-third column">
+				<div class="one-third column bouncer" data-animation="bounceInUp">
 					<h3 class="white"><span class="lines">Разработка</span></h3>
                     <i class="fa service-icon fa-cogs fa-4x"></i>
 					<p class="white">He is here. A tremor in the Force. The last time I felt it was in the presence of my old master. Hey, Luke! May the Force be with you. The plans you refer to will soon be back in our hands.</p>
 				</div>
 				
-				<div class="one-third column">
+				<div class="one-third column bouncer" data-animation="bounceInRight">
 					<h3 class="white"><span class="lines">Соцсети</span></h3>
                     <i class="fa service-icon fa-vk fa-4x"></i>
 					<p class="white">He is here. A tremor in the Force. The last time I felt it was in the presence of my old master. Hey, Luke! May the Force be with you. The plans you refer to will soon be back in our hands.
@@ -194,7 +196,7 @@
         <!--<p class="separator">A tremor in the Force. The last time I felt it was in the <br />presence of my old master</p>-->
 	</div>
 	
-	<div id="work">
+	<div id="what">
 		<div class="container">
 
 				
@@ -203,24 +205,44 @@
 			<div class="portfolio">
 			
                 <div class="sixteen columns">
-                    <h2><span class="lines">Наши проекты</span></h2>
+                    <h3><span class="lines">Наши проекты</span></h3>
                 </div> <!-- end sixteen columns -->
 
-				<div class="one-third column">
-					<!-- begin example gallery -->
-					<a href="images/example-img.png" rel="prettyPhoto[gallery1]" title="Your text here"><img src="images/thumb1.jpg" class="scale-with-grid" alt="" /></a>
-					<div class="hidden"><a href="images/example-img.png" rel="prettyPhoto[gallery1]" title="your text here again"><img src="images/thumb4.jpg" class="scale-with-grid" style="display:hidden;" /></a></div>
-					<div class="hidden"><a href="images/example-img.png" rel="prettyPhoto[gallery1]" title="your text here again"><img src="images/thumb4.jpg" class="scale-with-grid" style="display:hidden;" /></a></div>
-					<div class="hidden"><a href="images/example-img.png" rel="prettyPhoto[gallery1]" title="your text here again"><img src="images/thumb4.jpg" class="scale-with-grid" style="display:hidden;" /></a></div>
-					<!-- end gallery -->
-					<p class="proj-title">Project title</p>
-					<p class="proj-desc">Project description</p>
+				<div class="one-third column thumb">
+                    <!-- begin example gallery -->
+                    <a href="images/example-img.png" rel="prettyPhoto[gallery1]" class="port-link">
+                        <img src="images/thumb1.jpg" class="scale-with-grid" alt="" />
+                        <div class="overlay" data-animation="bounceInDown">
+                            <p class="proj-title"><span>LionFace</span></p>
+                            <p class="proj-desc">Социальная сеть нового поколения</p>
+                        </div>
+                    </a>
+                    <div class="hidden">
+                        <a href="images/example-img.png" rel="prettyPhoto[gallery1]" title="your text here again">
+                            <img src="images/thumb4.jpg" class="scale-with-grid" style="display:hidden;" />
+                        </a>
+                    </div>
+                    <div class="hidden">
+                        <a href="images/example-img.png" rel="prettyPhoto[gallery1]" title="your text here again">
+                            <img src="images/thumb4.jpg" class="scale-with-grid" style="display:hidden;" />
+                        </a>
+                    </div>
+                    <div class="hidden">
+                        <a href="images/example-img.png" rel="prettyPhoto[gallery1]" title="your text here again">
+                            <img src="images/thumb4.jpg" class="scale-with-grid" style="display:hidden;" />
+                        </a>
+                    </div>
+                    <!-- end gallery -->
 				</div> <!-- end one-third column -->
 			
-				<div class="one-third column">
-					<a href="http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf?width=792&amp;height=294" rel="prettyPhoto" title="Your text here"><img src="images/thumb2.jpg" class="scale-with-grid" alt="" /></a>
-					<p class="proj-title">Project title</p>
-					<p class="proj-desc">Project description</p>
+				<div class="one-third column thumb">
+					<a href="http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf?width=792&amp;height=294" rel="prettyPhoto" class="port-link">
+                        <img src="images/thumb2.jpg" class="scale-with-grid" alt="" />
+                        <div class="overlay" data-animation="bounceInDown">
+                            <p class="proj-title"><span>LionFace</span></p>
+                            <p class="proj-desc">Социальная сеть нового поколения</p>
+                        </div>
+                    </a>
 				</div> <!-- end one-third column -->
 			
 				<div class="one-third column">
@@ -266,7 +288,7 @@
 
 		<div class="container">
 		
-            <div class="pricing">
+            <div class="pricing" id="price">
 
                 <div class="sixteen columns">
                     <h3 class="white"><span class="lines">Наши расценки</span></h3>
@@ -313,100 +335,105 @@
                 </div> <!-- end four columns -->
                 <div class="clear"></div>	
             </div> <!-- end pricing -->
-			<div class="sixteen columns">
-				<h2 class="white"><span class="lines">Контакты</span></h2>
-			</div> <!-- end sixteen columns -->
-			
-			<div class="eight columns">
-				<p class="white">I have traced the Rebel spies to her. Now she is my only link to finding their secret base. You don't believe in the Force, do you? All right. Well, take care of yourself, Han. Hokey religions and ancient weapons are no match for a good blaster at your side, kid.</p>
-			</div> 
-			
-			<div class="eight columns">
-				<p class="white">Send a distress signal, and inform the Senate that all on board were killed. Alderaan? I'm not going to Alderaan. I've got to go home. It's late, I'm in for it as it is. She must have hidden the plans in the escape pod.</p>
-			</div>
-			
-			<div class="clear"></div>
-			
-			<!-- begin contact form -->
-			<div class="eight columns contact-form">
-			
-				<div class="cfg-contactform" id="cfg-contactform-4">
-					<div class="cfg-contactform-content">
 
-						<div class="cfg-element-container">
-							<label class="cfg-label" id="cfg-element-4-37-label" ><span class="cfg-label-value"><p>Name</p></span></label>
-							<div class="cfg-element-set" id="cfg-element-4-37-set" >
-								<div class="cfg-element-content">
-									<input type="text" class="cfg-type-text cfg-form-value " name="cfg-element-4-37" id="cfg-element-4-37"  />
-								</div>
-							</div>
-							<div class="cfg-clear"></div>
-						</div>
+            <div id="info">
 
-						<div class="cfg-element-container">
-							<label class="cfg-label" id="cfg-element-4-34-label" ><span class="cfg-label-value"><p>Email address</p> </span></label>
-							<div class="cfg-element-set" id="cfg-element-4-34-set" >
-								<div class="cfg-element-content">
-									<input type="text" class="cfg-type-text cfg-form-value " name="cfg-element-4-34" id="cfg-element-4-34"  />
-								</div>
-							</div>
-							<div class="cfg-clear"></div>
-						</div>
+                <div class="sixteen columns">
+                    <h2 class="white"><span class="lines">Контакты</span></h2>
+                </div> <!-- end sixteen columns -->
 
-						<div class="cfg-element-container">
-							<label class="cfg-label" id="cfg-element-4-35-label" ><span class="cfg-label-value"><p>Your message</p></span></label>
-							<div class="cfg-element-set" id="cfg-element-4-35-set" >
-								<div class="cfg-element-content">
-									<textarea class="cfg-type-textarea cfg-form-value " name="cfg-element-4-35" id="cfg-element-4-35" rows="6" ></textarea>
-								</div>
-							</div>
-							<div class="cfg-clear"></div>
-						</div>
+                <div class="eight columns">
+                    <p class="white">I have traced the Rebel spies to her. Now she is my only link to finding their secret base. You don't believe in the Force, do you? All right. Well, take care of yourself, Han. Hokey religions and ancient weapons are no match for a good blaster at your side, kid.</p>
+                </div> 
 
-						<div class="cfg-element-container">
-							<div class="cfg-element-set" id="cfg-element-4-36-set" >
-								<div class="cfg-element-content">
-									<input type="submit" class="cfg-submit " name="cfg-element-4-36" id="cfg-element-4-36" value="Send"   />
-								</div>
-							</div>
-						</div>
+                <div class="eight columns">
+                    <p class="white">Send a distress signal, and inform the Senate that all on board were killed. Alderaan? I'm not going to Alderaan. I've got to go home. It's late, I'm in for it as it is. She must have hidden the plans in the escape pod.</p>
+                </div>
 
-						<div class="cfg-loading">&nbsp;</div>
+                <div class="clear"></div>
 
-					</div><!-- cfg-contactform-content -->
-				</div><!-- cfg-contactform -->
-				
-			</div> <!-- end eight columns -->
-			<!-- end contact form -->
+                <!-- begin contact form -->
+                <div class="eight columns contact-form">
 
-			
-			<div class="eight columns">
-				
-				<div class="contact-info">
-					
-                    <h3 class="white"><span class="lines">Информация для связи</span></h3>
-				
-					<p class="white"><img src="images/icn-phone.png" alt="" /> +123 456 789</p>
-					<p class="white"><img src="images/icn-email.png" alt="" /> youremail@here.com</p>
-					<p class="white"><img src="images/icn-address.png" alt="" /> 767 Fifth Ave. <br />
-						New York, NY 10153</p>
-				</div> <!-- end contact-info -->
-				
-				<div class="social">
-					<ul>
-						<li><a href="#"><img src="images/icn-twitter2.png" alt="" /></a></li>
-						<li><a href="#"><img src="images/icn-facebook2.png" alt="" /></a></li>
-						<li><a href="#"><img src="images/icn-gplus.png" alt="" /></a></li>
-						<li><a href="#"><img src="images/icn-linkedin.png" alt="" /></a></li>
-						<li><a href="#"><img src="images/icn-forrst.png" alt="" /></a></li>
-						<li><a href="#"><img src="images/icn-skype.png" alt="" /></a></li>
-						<li><a href="#"><img src="images/icn-dribbble.png" alt="" /></a></li>
-						<li><a href="#"><img src="images/icn-pinterest.png" alt="" /></a></li>
-						<li><a href="#"><img src="images/icn-vimeo.png" alt="" /></a></li>
-					</ul>
-				</div> <!-- end social -->
-				
-			</div> <!-- end eight columns -->
+                    <div class="cfg-contactform" id="cfg-contactform-4">
+                        <div class="cfg-contactform-content">
+
+                            <div class="cfg-element-container">
+                                <label class="cfg-label" id="cfg-element-4-37-label" ><span class="cfg-label-value"><p>Name</p></span></label>
+                                <div class="cfg-element-set" id="cfg-element-4-37-set" >
+                                    <div class="cfg-element-content">
+                                        <input type="text" class="cfg-type-text cfg-form-value " name="cfg-element-4-37" id="cfg-element-4-37"  />
+                                    </div>
+                                </div>
+                                <div class="cfg-clear"></div>
+                            </div>
+
+                            <div class="cfg-element-container">
+                                <label class="cfg-label" id="cfg-element-4-34-label" ><span class="cfg-label-value"><p>Email address</p> </span></label>
+                                <div class="cfg-element-set" id="cfg-element-4-34-set" >
+                                    <div class="cfg-element-content">
+                                        <input type="text" class="cfg-type-text cfg-form-value " name="cfg-element-4-34" id="cfg-element-4-34"  />
+                                    </div>
+                                </div>
+                                <div class="cfg-clear"></div>
+                            </div>
+
+                            <div class="cfg-element-container">
+                                <label class="cfg-label" id="cfg-element-4-35-label" ><span class="cfg-label-value"><p>Your message</p></span></label>
+                                <div class="cfg-element-set" id="cfg-element-4-35-set" >
+                                    <div class="cfg-element-content">
+                                        <textarea class="cfg-type-textarea cfg-form-value " name="cfg-element-4-35" id="cfg-element-4-35" rows="6" ></textarea>
+                                    </div>
+                                </div>
+                                <div class="cfg-clear"></div>
+                            </div>
+
+                            <div class="cfg-element-container">
+                                <div class="cfg-element-set" id="cfg-element-4-36-set" >
+                                    <div class="cfg-element-content">
+                                        <input type="submit" class="cfg-submit " name="cfg-element-4-36" id="cfg-element-4-36" value="Send"   />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cfg-loading">&nbsp;</div>
+
+                        </div><!-- cfg-contactform-content -->
+                    </div><!-- cfg-contactform -->
+
+                </div> <!-- end eight columns -->
+                <!-- end contact form -->
+
+
+                <div class="eight columns">
+
+                    <div class="contact-info">
+
+                        <h3 class="white"><span class="lines">Информация для связи</span></h3>
+
+                        <p class="white"><img src="images/icn-phone.png" alt="" /> +123 456 789</p>
+                        <p class="white"><img src="images/icn-email.png" alt="" /> youremail@here.com</p>
+                        <p class="white"><img src="images/icn-address.png" alt="" /> 767 Fifth Ave. <br />
+                        New York, NY 10153</p>
+                    </div> <!-- end contact-info -->
+
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><img src="images/icn-twitter2.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icn-facebook2.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icn-gplus.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icn-linkedin.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icn-forrst.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icn-skype.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icn-dribbble.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icn-pinterest.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icn-vimeo.png" alt="" /></a></li>
+                        </ul>
+                    </div> <!-- end social -->
+
+                </div> <!-- end eight columns -->
+
+            </div>
 			
 			<div class="clear"></div>
 			

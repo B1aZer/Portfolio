@@ -1,5 +1,7 @@
 @import "compass/css3";
 
+// HOW ICONS
+
 .service-icon {
     @include transition-property(all);
     @include transition-duration(0.5s); 
@@ -25,4 +27,42 @@
     color: #ffffff;
     border: 4px solid #ffffff;
     background: #333;
+}
+
+.bouncer {
+	opacity: 0;
+}
+
+.activated {
+	opacity: 1;
+}
+
+// PORTFOLIO
+
+.portfolio .thumb .port-link {
+    overflow: hidden;
+    background-color: #e5e5e5;
+    display: block;
+    position: relative;
+    height: 230px;
+}
+
+
+.portfolio .overlay {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 0px;
+    width: 90%;
+    opacity: 0;
+}
+
+.portfolio img {
+    width: 100%;
+    @include transition-property(all);
+    @include transition-duration(0.5s); 
+}
+
+.portfolio .port-link:hover img {
+    opacity: 0.1;
 }

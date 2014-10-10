@@ -246,6 +246,17 @@ module.exports = function (grunt) {
         },
         // Put files not handled in other tasks here
         copy: {
+            pphoto: {
+                files: [{
+                  expand: true,
+                  cwd: '<%= yeoman.app %>/prettyPhoto',
+                  dest: '<%= yeoman.dist %>/prettyPhoto',
+                  //src: '<%= yeoman.app %>/prettyPhoto/**'
+                  src: [
+                    '**'
+                  ]
+                }]
+            },
             fonts: {
                 files: [{
                     expand: true,
@@ -344,6 +355,7 @@ module.exports = function (grunt) {
         'uglify',
         'modernizr',
         'copy:dist',
+        'copy:pphoto',
         'copy:fonts',
         'rev',
         'usemin'

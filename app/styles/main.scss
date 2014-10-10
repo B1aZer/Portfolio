@@ -66,3 +66,21 @@
 .portfolio .port-link:hover img {
     opacity: 0.1;
 }
+
+// CONTACT
+
+.cfg-type-textarea {
+    width: 100%;
+}
+
+.contact-form input {
+    border: 1px solid #e8e8e8;
+    width: 90%;
+    font-size: 13px;
+    color: #747474;
+    padding: 20px 2%;
+    float: left;
+    margin: 0 1% 2%;
+    border-radius: 2px;
+    box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px;
+}

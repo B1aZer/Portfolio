@@ -55,4 +55,20 @@ $(function ($) {
     overlay.removeClass('animated activated' + ' ' + animation).animate({'opacity': 0});
   });
 
+  $('.form-submit-btn').on('click', function (e) {
+    e.preventDefault();
+    var dataSending = JSON.stringify($('form#contact-form-id').serializeArray());
+    $.ajax({
+        url: '/mail',
+        type: 'post',
+        contentType: 'application/json',
+        dataType: 'json',
+        data: dataSending,
+        success: function(data) {
+            window.alert('message sent');
+            console.log(data);
+        }
+    });
+  });
+
 });

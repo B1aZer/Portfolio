@@ -169,7 +169,7 @@ module.exports = function (grunt) {
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
                         '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
-                        '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
+                        //'<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
                     ]
                 }
             }
@@ -182,7 +182,7 @@ module.exports = function (grunt) {
         },
         usemin: {
             options: {
-                assetsDirs: ['<%= yeoman.dist %>']
+                assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images']
             },
             html: ['<%= yeoman.dist %>/{,*/}*.html'],
             css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
@@ -246,6 +246,16 @@ module.exports = function (grunt) {
         },
         // Put files not handled in other tasks here
         copy: {
+            fonts: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/bower_components/font-awesome/fonts',
+                    dest: '<%= yeoman.dist %>/styles/fonts',
+                    src: [
+                        '*.*'
+                    ]
+                }]
+            },
             dist: {
                 files: [{
                     expand: true,
@@ -334,6 +344,7 @@ module.exports = function (grunt) {
         'uglify',
         'modernizr',
         'copy:dist',
+        'copy:fonts',
         'rev',
         'usemin'
     ]);

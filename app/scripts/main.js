@@ -59,7 +59,7 @@ $(function ($) {
     e.preventDefault();
     var dataSending = JSON.stringify($('form#contact-form-id').serializeArray());
     $.ajax({
-        url: '/mail',
+        url: '/api/mail/',
         type: 'post',
         contentType: 'application/json',
         dataType: 'json',

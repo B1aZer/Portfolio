@@ -47,13 +47,43 @@ module.exports = function (grunt) {
                 // change this to '0.0.0.0' to access the server from outside
                 hostname: 'localhost'
             },
+            proxies: [
+                {
+                    context: '/api',
+                    host: 'localhost',
+                    port: 5000
+                    /*https: false,
+                    xforward: false,
+                    headers: {
+                      "x-custom-added-header": value
+                    }
+                    */
+                }
+            ],
             livereload: {
                 options: {
                     open: true,
                     base: [
                         '.tmp',
                         '<%= yeoman.app %>'
-                    ]
+                    ],
+                    middleware: function (connect, options) {
+                      var middlewares = [];
+
+                      if (!Array.isArray(options.base)) {
+                        options.base = [options.base];
+                      }
+
+                      // Setup the proxy
+                      middlewares.push(require('grunt-connect-proxy/lib/utils').proxyRequest);
+
+                      // Serve static files
+                      options.base.forEach(function(base) {
+                        middlewares.push(connect.static(base));
+                      });
+
+                      return middlewares;
+                    }
                 }
             },
             test: {
@@ -327,6 +357,7 @@ module.exports = function (grunt) {
             'clean:server',
             'concurrent:server',
             'autoprefixer',
+            'configureProxies:server',
             'connect:livereload',
             'watch'
         ]);

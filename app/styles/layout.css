@@ -28,6 +28,7 @@
 
 h1, h2, h3 {
     font-family: 'Roboto Slab', serif;
+    line-height: 1.1;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h1 {
 	text-transform: uppercase;
 	position: relative;
 	z-index: 150;
-	margin-bottom: 70px;
+	margin-bottom: 25px;
 }
 
 h1.small {
@@ -108,10 +109,7 @@ p.white {
 /* #Buttons
 ================================================== */
 
-.button1,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+.button1 {
 	background: #3a3a3a;
 	border: 0;
 	color: #fff;
@@ -127,20 +125,14 @@ input[type="button"] {
 	font-family: 'Roboto', sans-serif; 
 }
 
-.button1:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
+.button1:hover {
 	color: #3a3a3a;
 	background: #e8e8e8;
 	border: 0; 
 }
 
 .button1:active,
-button1:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active {
+button1:active {
 	color: #3a3a3a;
 	background: #e8e8e8;
 	border: 0;
@@ -168,8 +160,7 @@ input[type="button"]:active {
 }
 
 /* Fix for odd Mozilla border & padding issues */
-.button1::-moz-focus-inner,
-input::-moz-focus-inner {
+.button1::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
@@ -329,7 +320,7 @@ nav a:hover {
 	z-index: 100;
 }
 
-#intro .bg1 {
+.bg1 {
 	background: url(../images/bg1.jpg) 10px 0px no-repeat fixed;	
 	margin: 0 auto;
 	padding: 0;
@@ -342,7 +333,6 @@ nav a:hover {
 
 .title {
 	position: fixed;
-	width: 100%;
 	text-align: center;
 	z-index: 150;
 	padding-top: 70px;
@@ -352,7 +342,7 @@ nav a:hover {
 	position: relative;
 	z-index: 150;
 	border-top: 1px solid #ededed;
-	width: 792px;
+	width: 818px;
 	margin: 0 auto 50px auto;
 }
 
@@ -565,7 +555,7 @@ p.t-type {
 
 p.proj-title {
     color: #e5e5e5;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	text-transform: uppercase;
     font-size: 120%;
     font-weight: bold;
@@ -574,6 +564,8 @@ p.proj-title {
 p.proj-title span {
     background: url(../images/bg-dark.jpg) repeat;
     padding: 2px 4px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0px 0px 0px 2px black;
 }
 
 p.proj-desc {
@@ -615,6 +607,15 @@ p.proj-desc {
 .contact-info img {
 	vertical-align: middle;
 	margin-right: 10px;
+}
+
+#cfg-contactform-4 .form-control {
+    height: 23px;
+
+}
+
+#cfg-element-4-35-set textarea {
+    width: 94%;
 }
 
 .pricing {
@@ -784,7 +785,7 @@ nav select {
 		}
 		
         .intro-line {
-            width: 352px;
+            width: 362px;
         }
 		
 		nav ul li {
@@ -819,6 +820,10 @@ nav select {
 			font-size: 30px;
 			margin-bottom: 20px;
 		}
+
+		h2 {
+			font-size: 45px;
+		}
 		
 		.title p {
 			font-size: 18px;
@@ -830,6 +835,16 @@ nav select {
 			padding-left: 5px;
 			padding-right: 5px;
 		}
+
+        .long-line {
+            line-height: 135%;
+        }
+
+        .bg-parallax {
+            background-attachment: scroll;
+            background-position: top center !important;
+            background-size: cover;
+        }
 		
 	}
 

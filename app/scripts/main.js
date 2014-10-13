@@ -65,8 +65,7 @@ $(function ($) {
         dataType: 'json',
         data: dataSending,
         success: function(data) {
-            window.alert('message sent');
-            console.log(data);
+            $('#myModal').modal();
         }
     });
   });

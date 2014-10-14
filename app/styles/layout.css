@@ -211,53 +211,57 @@ p.separator {
 
 #separator1 {
 	width: 100%;
-	height: 500px;
 	position: relative;
 }
 
 .bg2 {
-	background: url(../images/bg2.jpg) no-repeat 0 0 fixed;
+	background: url(../images/bg2.jpg) no-repeat;
 	margin: 0 auto;
 	padding: 0;
 	position: absolute;
 	z-index: 200;
 	width: 100%;
-	height: 500px;
-    background-size: 100% auto;
+	height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #separator2 {
 	width: 100%;
-	height: 500px;
 	position: relative;
 }
 
 .bg3 {
-	background: url(../images/bg3.jpg) no-repeat 0 0 fixed;
+	background: url(../images/bg3.jpg) no-repeat;
 	margin: 0 auto;
 	padding: 0;
 	position: absolute;
 	z-index: 200;
 	width: 100%;
-	height: 500px;
-    background-size: 100% auto;
+	height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #separator3 {
 	width: 100%;
-	height: 500px;
 	position: relative;
 }
 
 .bg4 {
-	background: url(../images/bg4.jpg) repeat 0 0 fixed;
+	background: url(../images/bg4.jpg) no-repeat;
 	margin: 0 auto;
 	padding: 0;
 	position: absolute;
 	z-index: 200;
 	width: 100%;
+	height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.separators {
 	height: 500px;
-    background-size: 100% auto;
 }
 
 
@@ -271,7 +275,7 @@ nav {
 	position: relative;
 	z-index: 1000;
 	text-align: center;
-	height: 38px;
+	height: 35px;
 	-webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
@@ -353,6 +357,7 @@ nav a:hover {
 	position: relative;
 	z-index: 150;
     text-shadow: 0px 0 black, 0px 1px black, 0px 0px black, 0 0px black;
+    margin-bottom: 0;
 }
 
 .social-intro {
@@ -697,9 +702,9 @@ span.p-small {
 
 
 
+/* NAVIGATION SELECT */
 
-
-nav select {
+#undefined-sticky-wrapper nav select {
 	display: none;
 }
 
@@ -709,10 +714,9 @@ nav select {
 		display: none; 
 	}
 	
-	nav select { 
+	#undefined-sticky-wrapper nav select { 
 		display: inline-block;
 		position: relative;
-		margin-top: 8px;
 		color: #000;
 	}
 }
@@ -761,7 +765,11 @@ nav select {
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .separators {
+            height: 400px;
+        }
+    }
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {}
@@ -792,7 +800,10 @@ nav select {
 			padding-left: 10px;
 			padding-right: 10px;
 		}
-		
+
+        .separators {
+            height: 300px;
+        }
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */

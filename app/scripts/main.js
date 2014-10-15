@@ -49,14 +49,6 @@ $(function () {
         }
     };
 
-  function parralaxBig() {
-      console.log('big');
-      $('.bg1').parallax('50%', 0.2);
-      $('.bg2').parallax('50%', 0.3);
-      $('.bg3').parallax('50%', 0.2);
-      $('.bg4').parallax('50%', 0.3);
-  }
-
   function parralaxMed() {
       console.log('med');
       $('.bg1').parallax('50%', 0.2);
@@ -64,15 +56,6 @@ $(function () {
       $('.bg3').parallax('50%', 0.6);
       $('.bg4').parallax('50%', 0.6);
   }
-
-  function parralaxSml() {
-      console.log('sml');
-      $('.bg1').parallax('50%', 0.2);
-      $('.bg2').parallax('50%', 0.8);
-      $('.bg3').parallax('50%', 0.8);
-      $('.bg4').parallax('50%', 0.8);
-  }
-
 	function parallaxInit() {
 		testMobile = isMobile.any();
 
@@ -83,49 +66,6 @@ $(function () {
 	}
 
   parallaxInit();
-
-  function parallaxReset() {
-    $('.bg1, .bg2, .bg3, .bg4').css({'background-position':'50% 0'});
-  }
-
-  function handlerBigFactory(className) {
-    return {
-      match : function() {
-        console.log('match big');
-        parralaxBig();
-      },
-      unmatch : function() {
-        console.log('unmatch big');
-        parallaxReset();
-      }
-    };
-  }
-
-  function handlerMedFactory(className) {
-    return {
-      match : function() {
-        console.log('match med');
-        parralaxMed();
-      },
-      unmatch : function() {
-        console.log('unmatch med');
-        parallaxReset();
-      }
-    };
-  }
-
-  function handlerSmlFactory(className) {
-    return {
-      match : function() {
-        console.log('match sml');
-        parralaxSml();
-      },
-      unmatch : function() {
-        console.log('unmatch sml');
-        parallaxReset();
-      }
-    };
-  }
 
   /*
   enquire

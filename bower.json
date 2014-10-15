@@ -6,7 +6,7 @@
     "countto": "*",
     "jquery-waypoints": "~2.0.5",
     "enquire": "~2.1.2",
-    "jquery": "1.11.1"
+    "jquery": "1.7.2"
   },
   "homepage": "https://github.com/B1aZer/Portfolio",
   "authors": [

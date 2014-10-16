@@ -10,10 +10,9 @@ $(function () {
       var bar = $(this).find('div');
       var prc = $(this).data('prc');
       var label = $(this).find('.skill-bar-percent');
-      console.log(prc);
-      bar.animate({'width':prc + '%'}, 200, 'swing', function () {
-        label.countTo({from: 0, to: prc, speed: 400});
-        label.animate({'left':prc + '%'});
+      bar.animate({'width':prc + '%'}, 800, 'swing', function () {
+        /*label.countTo({from: 0, to: prc, speed: 400});*/
+        /*label.animate({'left':prc + '%'});*/
       });
     }, {
       offset: ht - 100,
@@ -57,9 +56,9 @@ $(function () {
       $('.bg4').parallax('50%', 0.6);
   }
 	function parallaxInit() {
-		testMobile = isMobile.any();
+		var testMobile = isMobile.any();
 
-		if (testMobile == null)
+		if (testMobile === null)
 		{
         parralaxMed();
 		}
@@ -110,10 +109,38 @@ $(function () {
         contentType: 'application/json',
         dataType: 'json',
         data: dataSending,
-        success: function(data) {
+        success: function() {
             $('#myModal').modal();
         }
     });
   });
 
+  // PORTFOLIO
+  function setColumns() { 
+  console.log('go');
+    var container = $('#what');
+    var winWidth = container.find('.container').width(), 
+    columnNumb = 3; 
+    postWidth = Math.floor(winWidth / columnNumb);
+
+    container.find('.thumb').each(function () { 
+      $(this).css( { 
+        width : postWidth + 'px' 
+      });
+    });
+  }		
+
+  // FIRST IMAGE	
+  function fullscreenImgHeight(){
+    $('#intro').css({height:ht});
+  }
+
+  fullscreenImgHeight();
+
+  $(window).bind('resize', function () { 
+    /*setColumns();			*/
+    fullscreenImgHeight();
+  });
+
 });
+

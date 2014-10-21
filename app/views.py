@@ -22,8 +22,7 @@ def send_view():
                    ['dmitry.branitskiy@gmail.com'])
     msg.body = form['message']
     try:
-        #mail.send(msg)
-        pass
+        mail.send(msg)
     except:
         result.status = False
     return jsonify(result)

@@ -80,13 +80,30 @@ $(function () {
 
   /* BOUNCERS */
   $('.bouncer').waypoint(function() {
-    console.log('appear');
+    console.log('appear11');
     $(this).each(function(){
       var animClasses = $(this).data('animation');
       $(this).addClass('animated activated' + ' ' + animClasses);
     });
   }, {
-    offset: ht - 100
+    triggerOnce: true,
+    offset: '50%'
+  });
+
+  $('.number').each(function () {
+    $(this).html('0');
+  });
+
+  $('.separators').waypoint(function() {
+    console.log('appear');
+    $(this).find('.number').each(function () {
+      var prc = $(this).data('prc');
+      var label = $(this);
+      label.countTo({from: 0, to: prc, speed: 800});
+    });
+  }, {
+    triggerOnce: true,
+    offset: '25%'
   });
 
   /* PORTFOLIO */

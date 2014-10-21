@@ -140,12 +140,10 @@
 	textarea,
 	select {
 		border: 1px solid #ccc;
-		padding: 6px 4px;
 		outline: none;
-		font: 13px 'Roboto', sans-serif;
-		color: #fff;
+		font: 14px 'Roboto', sans-serif;
 		margin: 0;
-		width: 210px;
+		width: 310px;
 		max-width: 100%;
 		display: block;
 		margin-bottom: 20px;

@@ -6,7 +6,7 @@ from flask_mail import Message
 def index_view():
     return render_template('index.html')
 
-@app.route('/mail', methods=['GET', 'POST'])
+@app.route('/api/mail/', methods=['GET', 'POST'])
 def send_view():
     result = {'status':True}
     if request.method != 'POST':
@@ -22,7 +22,8 @@ def send_view():
                    ['dmitry.branitskiy@gmail.com'])
     msg.body = form['message']
     try:
-        mail.send(msg)
+        #mail.send(msg)
+        pass
     except:
         result.status = False
     return jsonify(result)

@@ -8,6 +8,8 @@ mail=Mail(app)
 # Determines the destination of the build. Only usefull if you're using Frozen-Flask
 app.config['FREEZER_DESTINATION'] = os.path.dirname(os.path.abspath(__file__))+'/../build'
 
+app.config['EMAIL_SEND_TO'] = 'dmitry.branitskiy@gmail.com'
+
 app.config.update(
 	DEBUG=True,
 	#EMAIL SETTINGS

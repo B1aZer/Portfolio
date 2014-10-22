@@ -20,12 +20,12 @@
   ================================================== -->
   	<link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">
   	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css"> 
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ static('styles/vendor/afb2bfab.fontawesome.css') }}"/>
     <link rel="stylesheet" href="{{ static('styles/vendor/48b336bb.animate.css') }}"/>
-    <link rel="stylesheet" href="{{ static('styles/e847a9f7.main.css') }}"/>
-	
+    <link rel="stylesheet" href="{{ static('styles/3d7c8249.main.css') }}"/>
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -43,77 +43,87 @@
 
 	<!-- Primary Page Layout
 	================================================== -->
-	
-	<div id="intro">
-	
-		<div class="bg1"></div>
-		
-		<div class="title">
-			<div class="intro-line"></div>
-			<h1>Студия</h1>
-			<h1 class="small">Веб Разработки</h1>
-			<div class="intro-line"></div>
-            <p>У нас вы можете заказать сайт любой категории и сложности. Мы будем рады вам помочь.</p>
-            <!--
-			<div class="social-intro">
-				<ul>
-					<li><a href="#"><img src="{{ static('images/1e1bfcec.icn-twitter-intro.png') }}" alt="" /></a></li>
-					<li><a href="#"><img src="{{ static('images/0b89d427.icn-facebook-intro.png') }}" alt="" /></a></li>
-					<li><a href="#"><img src="{{ static('images/3d0cad01.icn-gplus-intro.png') }}" alt="" /></a></li>
-					<li><a href="#"><img src="{{ static('images/68ec49fa.icn-linkedin-intro.png') }}" alt="" /></a></li>
-					<li><a href="#"><img src="{{ static('images/a621f72f.icn-dribbble-intro.png') }}" alt="" /></a></li>
-					<li><a href="#"><img src="{{ static('images/0c826480.icn-vimeo-intro.png') }}" alt="" /></a></li>
-					<li><a href="#"><img src="{{ static('images/b69f0e99.icn-pinterest-intro.png') }}" alt="" /></a></li>
-				</ul>
-			</div>
-            -->
-		</div> <!-- end title -->
-	</div> <!-- end intro -->
-	
-	
-	<nav>
-		<ul>
-			<li><a href="#who">Кто мы</a></li>
-			<li><a href="#how">Чем занимаемся</a></li>
-			<li><a href="#what">Наши проекты</a></li>
-			<li><a href="#price">Сколько стоит</a></li>
-			<li><a href="#info">Как связаться</a></li>
-		</ul>
-		
-		<select name="dropdpown" size="1" onchange="scrollTo(this.value)">
-			<option value="" selected="selected">Menu</option>
-			<option value="#intro">Top</option>
-			<option value="#work">Work</option>
-			<option value="#services">Services</option> 
-			<option value="#about">About</option> 
-			<option value="#contact">Contact</option> 
-		</select>
-	</nav>
-	
-	
+
+  <div id="intro">
+
+      <div class="bg1 bg-parallax"></div>
+
+
+      <div class="container">
+          <div class="sixteen columns">
+              <div class="title-parent">
+                  <div class="title">
+                      <div class="down-button">
+                          <a href="#who" class="no-dec"><i class="fa service-icon small-icon fa-angle-down fa-3x"></i></a>
+                      </div>
+                      <div class="intro-line"></div>
+                      <h1>Студия</h1>
+                      <h1 class="small">Веб Разработки</h1>
+                      <div class="intro-line"></div>
+                      <p>У нас вы можете заказать сайт любой категории и сложности. Мы будем рады вам помочь.</p>
+                      <!--
+                    <div class="social-intro">
+                        <ul>
+                            <li><a href="#"><img src="{{ static('images/1e1bfcec.icn-twitter-intro.png') }}" alt="" /></a></li>
+                            <li><a href="#"><img src="{{ static('images/0b89d427.icn-facebook-intro.png') }}" alt="" /></a></li>
+                            <li><a href="#"><img src="{{ static('images/3d0cad01.icn-gplus-intro.png') }}" alt="" /></a></li>
+                            <li><a href="#"><img src="{{ static('images/68ec49fa.icn-linkedin-intro.png') }}" alt="" /></a></li>
+                            <li><a href="#"><img src="{{ static('images/a621f72f.icn-dribbble-intro.png') }}" alt="" /></a></li>
+                            <li><a href="#"><img src="{{ static('images/0c826480.icn-vimeo-intro.png') }}" alt="" /></a></li>
+                            <li><a href="#"><img src="{{ static('images/b69f0e99.icn-pinterest-intro.png') }}" alt="" /></a></li>
+                        </ul>
+                    </div>
+                    -->
+                  </div> <!-- end title -->
+              </div>
+          </div> <!-- end columns -->
+      </div> <!-- end container -->
+  </div> <!-- end intro -->
+
+
+  <nav>
+      <ul>
+          <li><a href="#who">Кто мы</a></li><!--
+   --><li><a href="#how">Что мы делаем</a></li><!--
+   --><li><a href="#what">Наши проекты</a></li><!--
+   --><li><a href="#price">Цены и Контакты</a></li><!--
+   --></ul>
+
+          <div class="container">
+              <select name="dropdpown" size="1" onchange="scrollTo(this.value)" class="form-control col-sm-2">
+                  <option value="" selected="selected">Меню</option>
+                  <option value="#who">Кто Мы</option>
+                  <option value="#how">Что мы делаем</option>
+                  <option value="#what">Наши проекты</option>
+                  <option value="#price">Цены и Контакты</option>
+              </select>
+          </div>
+  </nav>
+
+
 	<div id="who">
 		<div class="container">
-		
+
 			<div class="sixteen columns">
 				<h2><span class="lines">Кто Мы</span></h2>
 			</div> <!-- end sixteen columns -->
-			
+
 			<div class="eight columns">
 				<p>Мы - команда разработчиков с более чем 5-ти летним стажем работы в области веб разработки. Наша команда состоит из профессионалов и готова взяться за проект любой сложности.</p>
-			</div> 
-			
+			</div>
+
 			<div class="eight columns">
 				<p>Мы вежливы, пунктуальны и всегда прислушиваемся к своим клиентам. С нами вы можете быть твердо уверены в качестве своего заказа.</p>
 			</div>
-			
+
 			<div class="clear"></div>
-			
+
 			<div class="skills">
-			
+
 				<div class="sixteen columns">
 					<h3><span class="lines">Навыки</span></h3>
 				</div> <!-- end sixteen columns -->
-				
+
 				<div class="sixteen columns">
 					<p>Photoshop</p>
 					<div class="skill-bg" data-prc="63"><div class="skill1"></div></div>
@@ -123,228 +133,358 @@
 					<div class="skill-bg" data-prc="85"><div class="skill3"></div></div>
 					<p>Python</p>
 					<div class="skill-bg" data-prc="85"><div class="skill4"></div></div>
+					<p>Linux</p>
+					<div class="skill-bg" data-prc="90"><div class="skill5"></div></div>
 				</div> <!-- end sixteen columns -->
 			</div> <!-- end skills -->
 
 			<div class="sixteen columns">
 				<div class="action">
 					<p>Хотите заказать сайт прямо сейчас ?</p>
-					<a href="#"><div class="button1">Нажмите сюда</div></a>
+					<a href="#info"><div class="button1">Нажмите сюда</div></a>
 				</div> <!-- end action -->
-			</div> <!-- end sixteen columns --> 
-			
+			</div> <!-- end sixteen columns -->
+
 		</div> <!-- end container -->
 	</div> <!-- work -->
-	
-	
-	<div id="separator1">
-        <div class="bg2"></div>
-        <!--<p class="separator">A tremor in the Force. The last time I felt it was in the <br />presence of my old master</p>-->
+
+
+	<div id="separator1" class="separators">
+        <div class="bg2 bg-parallax"></div>
+        <p class="separator"><span class="number" data-prc="3655">3655</span> <span class="text">Выпитых чашек кофе</span></p>
 	</div>
-	
-	
+
+
 	<div id="how">
 		<div class="container">
-		
+
 			<div class="sixteen columns">
-				<h2 class="white"><span class="lines">Чем мы занимаемся</span></h2>
+				<h2 class="white"><span class="lines long-line">Что мы делаем</span></h2>
 			</div> <!-- end sixteen columns -->
-			
+
 			<div class="clear"></div>
-			
+
 			<div class="eight columns">
 				<p class="white">Мы занимаемся созданием сайтов, интерфейсов, веб приложений любой тематики. Мы готовы создать индидуальный дизайн, продвинутый функционал и внедрить поддержку социальных сетей по вашему желанию.</p>
-			</div> 
-			
+			</div>
+
 			<div class="eight columns">
 				<p class="white">Мы всегда стараемся быть в курсе последних разработок и используем их в своей работе. Это позволяет нам снизить сроки на создание сайта, а также улучшить его внешний вид.</p>
 			</div>
-			
+
 			<div class="clear"></div>
-			
+
 			<div class="serv-list">
                 <div class="one-third column bouncer" data-animation="bounceInLeft">
 					<h3 class="white"><span class="lines">Дизайн</span></h3>
                     <i class="fa service-icon fa-paint-brush fa-4x"></i>
-					<p class="white">He is here. A tremor in the Force. The last time I felt it was in the presence of my old master. Hey, Luke! May the Force be with you. The plans you refer to will soon be back in our hands.</p>
+                    <p class="white">Мы подбираем индивидуальный дизайн для каждого клиента, предварительно обсудив его с заказчиком. Дизайн может быть как простым, так и продвинутым. Все зависит от желания клиента.</p>
 				</div>
-				
+
 				<div class="one-third column bouncer" data-animation="bounceInUp">
 					<h3 class="white"><span class="lines">Разработка</span></h3>
                     <i class="fa service-icon fa-cogs fa-4x"></i>
-					<p class="white">He is here. A tremor in the Force. The last time I felt it was in the presence of my old master. Hey, Luke! May the Force be with you. The plans you refer to will soon be back in our hands.</p>
+					<p class="white">Мы ведем разработку с использованием передовых технологий, что позволяет нашим сайтам работать на любых устройствах, затрачивая минимум ресурсов.</p>
 				</div>
-				
+
 				<div class="one-third column bouncer" data-animation="bounceInRight">
 					<h3 class="white"><span class="lines">Соцсети</span></h3>
                     <i class="fa service-icon fa-vk fa-4x"></i>
-					<p class="white">He is here. A tremor in the Force. The last time I felt it was in the presence of my old master. Hey, Luke! May the Force be with you. The plans you refer to will soon be back in our hands.
-                    </p>
+					<p class="white">Мы используем все премущества социальных сетей в своих проктах. Мы также можем внедрить поддержку любых внешних интерфейсов по желанию заказчика.</p>
 				</div>
 			</div> <!-- end serv-list -->
-			
+
         </div>
     </div> <!-- end serv-list -->
-			
-	<div id="separator2">
-        <div class="bg3"></div>
+
+	<div id="separator2" class="separators">
+        <div class="bg3 bg-parallax"></div>
         <!--<p class="separator">A tremor in the Force. The last time I felt it was in the <br />presence of my old master</p>-->
+        <p class="separator"><span class="number" data-prc="41">41</span> <span class="text">Успешный проект</span></p>
 	</div>
-	
+
 	<div id="what">
 		<div class="container">
 
-				
+
 			<div class="clear"></div>
-			
+
 			<div class="portfolio">
-			
+
                 <div class="sixteen columns">
-                    <h3><span class="lines">Наши проекты</span></h3>
+                    <h2><span class="lines long-line">Наши проекты</span></h2>
                 </div> <!-- end sixteen columns -->
 
 				<div class="one-third column thumb">
-                    <!-- begin example gallery -->
-                    <a href="{{ static('images/5a2eac06.example-img.png') }}" rel="prettyPhoto[gallery1]" class="port-link">
-                        <img src="{{ static('images/f6f933fd.thumb1.jpg') }}" class="scale-with-grid" alt="">
+					<a href="{{ static('images/009991cc.proj1.png') }}" rel="prettyPhoto" title="&lt;a target=&quot;blank&quot; href=&quot;http://www.ixsystems.com/&quot;&gt;Посетить сайт&lt;/a&gt;" class="port-link">
+                        <img src="{{ static('images/929dfc9b.thumb1.jpg') }}" class="scale-with-grid" alt="" title="">
+                        <div class="overlay" data-animation="bounceInDown">
+                            <p class="proj-title"><span>iX Systems</span></p>
+                            <p class="proj-desc">Портал сделанный по заказу коммерческой организации, занимающейся распространением свободного программного обеспечения.</p>
+                        </div>
+                    </a>
+				</div> <!-- end one-third column -->
+
+				<div class="one-third column thumb">
+					<a href="http://youtu.be/6uXDgVvRFO4" rel="prettyPhoto" class="port-link">
+                        <img src="{{ static('images/f6f6ca65.thumb2.jpg') }}" class="scale-with-grid" alt="">
                         <div class="overlay" data-animation="bounceInDown">
                             <p class="proj-title"><span>LionFace</span></p>
-                            <p class="proj-desc">Социальная сеть нового поколения</p>
+                            <p class="proj-desc">Социальная сеть нового поколения. Проект, вобравший лучшие качества Facebook и Twitter.</p>
+                        </div>
+                    </a>
+				</div> <!-- end one-third column -->
+
+
+				<div class="one-third column thumb">
+					<a href="{{ static('images/1284cb1a.proj3.png') }}" rel="prettyPhoto" title="&lt;a target=&quot;blank&quot; href=&quot;http://dotafarm.com/&quot;&gt;Посетить сайт&lt;/a&gt;" class="port-link">
+                        <img src="{{ static('images/f8aba336.thumb3.jpg') }}" class="scale-with-grid" alt="" title="">
+                        <div class="overlay" data-animation="bounceInDown">
+                            <p class="proj-title"><span>Dota Farm</span></p>
+                            <p class="proj-desc">Сайт посвященный многопользовательской игре Dota. Также включает в себя интернет-магазин.</p>
+                        </div>
+                    </a>
+				</div> <!-- end one-third column -->
+
+
+				<div class="clear"></div>
+
+				<div class="one-third column thumb">
+					<a href="{{ static('images/62d07800.proj4.png') }}" rel="prettyPhoto" title="&lt;a target=&quot;blank&quot; href=&quot;http://vivid-beach-2176.herokuapp.com/&quot;&gt;Посетить сайт&lt;/a&gt;" class="port-link">
+                        <img src="{{ static('images/a320eda7.thumb4.jpg') }}" class="scale-with-grid" alt="" title="">
+                        <div class="overlay" data-animation="bounceInDown">
+                            <p class="proj-title"><span>Join Me</span></p>
+                            <p class="proj-desc">Проект созданный по аналогу популярного инкубатора идей Kickstarter.</p>
+                        </div>
+                    </a>
+				</div> <!-- end one-third column -->
+
+				<div class="one-third column thumb">
+					<a href="{{ static('images/e433f6e1.proj6.png') }}" rel="prettyPhoto" title="&lt;a target=&quot;blank&quot; href=&quot;http://pretty-girls.appspot.com/&quot;&gt;Посетить сайт&lt;/a&gt;" class="port-link">
+                        <img src="{{ static('images/e12dc7c5.thumb6.jpg') }}" class="scale-with-grid" alt="" title="">
+                        <div class="overlay" data-animation="bounceInDown">
+                            <p class="proj-title"><span>Pretty Girls</span></p>
+                            <p class="proj-desc">Сайт фото студии с красивыми девушками и музыкой.</p>
+                        </div>
+                    </a>
+				</div> <!-- end one-third column -->
+
+				<div class="one-third column thumb">
+                    <!-- begin example gallery -->
+                    <a href="{{ static('images/105f7ec4.proj5.jpg') }}" rel="prettyPhoto[gallery1]" class="port-link">
+                        <img src="{{ static('images/8f266868.thumb5.jpg') }}" class="scale-with-grid" alt="" title="">
+                        <div class="overlay" data-animation="bounceInDown">
+                            <p class="proj-title"><span>Celebrities Blog</span></p>
+                            <p class="proj-desc">Сайт-блог c последними новостями из мира шоу-бизнеса.</p>
                         </div>
                     </a>
                     <div class="hidden">
-                        <a href="{{ static('images/5a2eac06.example-img.png') }}" rel="prettyPhoto[gallery1]" title="your text here again">
-                            <img src="{{ static('images/46d95b82.thumb4.jpg') }}" class="scale-with-grid" style="display:hidden">
+                        <a href="{{ static('images/e420a585.proj5-1.jpg') }}" rel="prettyPhoto[gallery1]" title="your text here again">
+                            <img src="{{ static('images/ec168f3c.thumb5-1.jpg') }}" class="scale-with-grid" style="display:hidden">
                         </a>
                     </div>
                     <div class="hidden">
-                        <a href="{{ static('images/5a2eac06.example-img.png') }}" rel="prettyPhoto[gallery1]" title="your text here again">
-                            <img src="{{ static('images/46d95b82.thumb4.jpg') }}" class="scale-with-grid" style="display:hidden">
+                        <a href="{{ static('images/7bc6dfb1.proj5-2.jpg') }}" rel="prettyPhoto[gallery1]" title="your text here again">
+                            <img src="{{ static('images/a29e1337.thumb5-2.jpg') }}" class="scale-with-grid" style="display:hidden">
                         </a>
                     </div>
                     <div class="hidden">
-                        <a href="{{ static('images/5a2eac06.example-img.png') }}" rel="prettyPhoto[gallery1]" title="your text here again">
-                            <img src="{{ static('images/46d95b82.thumb4.jpg') }}" class="scale-with-grid" style="display:hidden">
+                        <a href="{{ static('images/20320e35.proj5-3.jpg') }}" rel="prettyPhoto[gallery1]" title="your text here again">
+                            <img src="{{ static('images/thumb5-3.jpg') }}" class="scale-with-grid" style="display:hidden">
+                        </a>
+                    </div>
+                    <div class="hidden">
+                        <a href="{{ static('images/efe798da.proj5-4.jpg') }}" rel="prettyPhoto[gallery1]" title="your text here again">
+                            <img src="{{ static('images/thumb5-4.jpg') }}" class="scale-with-grid" style="display:hidden">
+                        </a>
+                    </div>
+                    <div class="hidden">
+                        <a href="{{ static('images/e27e425b.proj5-5.jpg') }}" rel="prettyPhoto[gallery1]" title="your text here again">
+                            <img src="{{ static('images/thumb5-5.jpg') }}" class="scale-with-grid" style="display:hidden">
                         </a>
                     </div>
                     <!-- end gallery -->
 				</div> <!-- end one-third column -->
-			
+
+				<div class="clear"></div>
+
 				<div class="one-third column thumb">
-					<a href="http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf?width=792&amp;height=294" rel="prettyPhoto" class="port-link">
-                        <img src="{{ static('images/648607d8.thumb2.jpg') }}" class="scale-with-grid" alt="">
+					<a href="{{ static('images/60184441.proj8.png') }}" rel="prettyPhoto" title="&lt;a target=&quot;blank&quot; href=&quot;http://hondasuv.ru/&quot;&gt;Посетить сайт&lt;/a&gt;" class="port-link">
+                        <img src="{{ static('images/2d02d844.thumb8.jpg') }}" class="scale-with-grid" alt="" title="">
                         <div class="overlay" data-animation="bounceInDown">
-                            <p class="proj-title"><span>LionFace</span></p>
-                            <p class="proj-desc">Социальная сеть нового поколения</p>
+                            <p class="proj-title"><span>Honda Blog</span></p>
+                            <p class="proj-desc">Сайт-блог о внедорожниках Honda. Также включает форум и интернет-магазин.</p>
                         </div>
                     </a>
 				</div> <!-- end one-third column -->
-			
-				<div class="one-third column">
-					<a href="{{ static('images/5a2eac06.example-img.png') }}" rel="prettyPhoto" title="&lt;a href=&quot;yourLink.html&quot;&gt;Your text&lt;/a&gt;"><img src="images/36da3b51.thumb3.jpg" class="scale-with-grid" alt=""></a>
-					<p class="proj-title">Project title</p>
-					<p class="proj-desc">Project description</p>
+
+				<div class="one-third column thumb">
+                    <!-- begin example gallery -->
+                    <a href="{{ static('images/a4954a02.proj7.jpg') }}" rel="prettyPhoto[gallery2]" class="port-link">
+                        <img src="{{ static('images/e93d3020.thumb7.jpg') }}" class="scale-with-grid" alt="" title="">
+                        <div class="overlay" data-animation="bounceInDown">
+                            <p class="proj-title"><span>Domain Database</span></p>
+                            <p class="proj-desc">Графическая оболочка для базы данных с удобным интерфейсом.</p>
+                        </div>
+                    </a>
+                    <div class="hidden">
+                        <a href="{{ static('images/eb939346.proj7-1.jpg') }}" rel="prettyPhoto[gallery2]" title="your text here again">
+                            <img src="{{ static('images/119e8591.thumb7-1.jpg') }}" class="scale-with-grid" style="display:hidden">
+                        </a>
+                    </div>
+                    <div class="hidden">
+                        <a href="{{ static('images/e382c98b.proj7-2.jpg') }}" rel="prettyPhoto[gallery2]" title="your text here again">
+                            <img src="{{ static('images/62a02f8b.thumb7-2.jpg') }}" class="scale-with-grid" style="display:hidden">
+                        </a>
+                    </div>
+                    <!-- end gallery -->
 				</div> <!-- end one-third column -->
-				
-				<div class="clear"></div>
-				
-				<div class="one-third column">
-					<a href="http://vimeo.com/26413257" rel="prettyPhoto" title="Your text here"><img src="{{ static('images/46d95b82.thumb4.jpg') }}" class="scale-with-grid" alt=""></a>
-					<p class="proj-title">Project title</p>
-					<p class="proj-desc">Project description</p>
+
+				<div class="one-third column thumb">
+					<a href="{{ static('images/1b159259.proj9.png') }}" rel="prettyPhoto" title="&lt;a target=&quot;blank&quot; href=&quot;http://23.23.193.121/wp/&quot;&gt;Посетить сайт&lt;/a&gt;" class="port-link">
+                        <img src="{{ static('images/5b566510.thumb9.jpg') }}" class="scale-with-grid" alt="" title="">
+                        <div class="overlay" data-animation="bounceInDown">
+                            <p class="proj-title"><span>Iphones Blog</span></p>
+                            <p class="proj-desc">Сайт-блог посвященный айфонам и другим тухническим новинкам.</p>
+                        </div>
+                    </a>
 				</div> <!-- end one-third column -->
-			
-				<div class="one-third column">
-					<a href="{{ static('images/5a2eac06.example-img.png') }}" rel="prettyPhoto" title="Your text here"><img src="images/2d11ac28.thumb5.jpg" class="scale-with-grid" alt=""></a>
-					<p class="proj-title">Project title</p>
-					<p class="proj-desc">Project description</p>
-				</div> <!-- end one-third column -->
-			
-				<div class="one-third column">
-					<a href="http://youtu.be/6uXDgVvRFO4" rel="prettyPhoto" title="Your text here"><img src="{{ static('images/111e8edf.thumb6.jpg') }}" class="scale-with-grid" alt=""></a>
-					<p class="proj-title">Lionface</p>
-					<p class="proj-desc">Социальная сеть нового поколения</p>
-				</div> <!-- end one-third column -->
-			
-			
+
 			</div> <!-- end portfolio -->
-			
+
 		</div> <!-- end container -->
 	</div> <!-- end services -->
-	
-	
-	<div id="separator3">
-        <div class="bg4"></div>
+
+
+	<div id="separator3" class="separators">
+        <div class="bg4 bg-parallax"></div>
         <!--<p class="separator">A tremor in the Force. The last time I felt it was in the <br />presence of my old master</p>-->
+        <p class="separator"><span class="number" data-prc="26">26</span> <span class="text">Довольных клиентов</span></p>
 	</div>
-	
-	
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h5 class="modal-title" id="myModalLabel">Сообщение отправлено</h5>
+      </div>
+      <div class="modal-body">
+          Спасибо за ваш интерес! Мы свяжимся с вами в близжайшее время.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
 	<div id="contact">
 
 		<div class="container">
-		
+
             <div class="pricing" id="price">
 
                 <div class="sixteen columns">
-                    <h3 class="white"><span class="lines">Наши расценки</span></h3>
+                    <h2 class="white"><span class="lines long-line">Наши расценки</span></h2>
                 </div> <!-- end sixteen columns -->
 
                 <div class="four columns">
-                    <p class="p-name">Простой</p>
-                    <p class="p-price"><span class="p-small">от</span> $150</p>
-                    <ul>
-                        <li>Хостинг</li>
-                        <li>Домен</li>
-                        <li>1 неделя</li>
-                    </ul>
+                    <div class="p-div">
+                        <p class="p-name">Простой</p>
+                        <p class="p-price"><span class="p-small">от</span> $150</p>
+                        <ul>
+                            <li>Хостинг</li>
+                            <li>Домен</li>
+                            <li>1 неделя</li>
+                        </ul>
+                    </div>
                 </div> <!-- end four columns -->
 
                 <div class="four columns">
-                    <p class="p-name">Портфолио</p>
-                    <p class="p-price"><span class="p-small">от</span> $250</p>
-                    <ul>
-                        <li>Хостинг</li>
-                        <li>Домен</li>
-                        <li>2 недели</li>
-                    </ul>
+                    <div class="p-div">
+                        <p class="p-name">Портфолио</p>
+                        <p class="p-price"><span class="p-small">от</span> $250</p>
+                        <ul>
+                            <li>Хостинг</li>
+                            <li>Домен</li>
+                            <li>2 недели</li>
+                        </ul>
+                    </div>
                 </div> <!-- end four columns -->
 
                 <div class="four columns">
-                    <p class="p-name">Магазин</p>
-                    <p class="p-price"><span class="p-small">от</span> $500</p>
-                    <ul>
-                        <li>Хостинг</li>
-                        <li>Домен</li>
-                        <li>4 недели</li>
-                    </ul>
+                    <div class="p-div">
+                        <p class="p-name">Магазин</p>
+                        <p class="p-price"><span class="p-small">от</span> $500</p>
+                        <ul>
+                            <li>Хостинг</li>
+                            <li>Домен</li>
+                            <li>4 недели</li>
+                        </ul>
+                    </div>
                 </div> <!-- end four columns -->
 
                 <div class="four columns">
-                    <p class="p-name">Портал</p>
-                    <p class="p-price"><span class="p-small">от</span> $1000</p>
-                    <ul>
-                        <li>Хостинг</li>
-                        <li>Домен</li>
-                        <li>1 месяц</li>
-                    </ul>
+                    <div class="p-div">
+                        <p class="p-name">Портал</p>
+                        <p class="p-price"><span class="p-small">от</span> $1000</p>
+                        <ul>
+                            <li>Хостинг</li>
+                            <li>Домен</li>
+                            <li>1 месяц</li>
+                        </ul>
+                    </div>
                 </div> <!-- end four columns -->
-                <div class="clear"></div>	
+                <div class="clear"></div>
             </div> <!-- end pricing -->
 
             <div id="info">
 
                 <div class="sixteen columns">
-                    <h2 class="white"><span class="lines">Контакты</span></h2>
+                    <h3 class="white"><span class="lines">Контакты</span></h3>
+                    <p class="white">Чтобы заказать сайт свяжитесь с нами любым удобным для вас способом: </p>
                 </div> <!-- end sixteen columns -->
 
-                <div class="eight columns">
-                    <p class="white">I have traced the Rebel spies to her. Now she is my only link to finding their secret base. You don't believe in the Force, do you? All right. Well, take care of yourself, Han. Hokey religions and ancient weapons are no match for a good blaster at your side, kid.</p>
-                </div> 
-
-                <div class="eight columns">
-                    <p class="white">Send a distress signal, and inform the Senate that all on board were killed. Alderaan? I'm not going to Alderaan. I've got to go home. It's late, I'm in for it as it is. She must have hidden the plans in the escape pod.</p>
+                <div class="four columns">
+                    <p class="white">
+                      <a href="tel:+79788533110">
+                          <i class="fa fa-phone"></i> +7 (978) 853-31-10 <br>
+                      </a>
+                    </p>
                 </div>
 
+                <div class="four columns">
+                    <p class="white">
+                      <a href="skype:pe4ene4ko?chat">
+                          <i class="fa fa-skype"></i> pe4ene4ko <br>
+                      </a>
+                    </p>
+                </div>
+
+                <div class="six columns">
+                    <p class="white">
+                        <a href="mailto:dmitry.branitskiy@gmail.com">
+                            <i class="fa fa-envelope"></i> dmitry.branitskiy@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="two columns">
+                    <div class="cfg-element-container pull-right">
+                        <div class="cfg-element-set" id="cfg-element-4-36-set">
+                            <div class="cfg-element-content">
+                                <input type="submit" class="btn btn-default form-submit-btn" name="cfg-element-4-36" id="cfg-element-4-36" value="Отослать">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="clear"></div>
 
                 <form id="contact-form-id">
@@ -354,31 +494,36 @@
 
                         <div class="cfg-contactform" id="cfg-contactform-4">
                             <div class="cfg-contactform-content">
-
-                                <div class="cfg-element-container">
-                                    <label class="cfg-label" id="cfg-element-4-37-label"><span class="cfg-label-value"><p>Name</p></span></label>
-                                    <div class="cfg-element-set" id="cfg-element-4-37-set">
-                                        <div class="cfg-element-content">
-                                            <input type="text" class="cfg-type-text cfg-form-value" name="name" id="cfg-element-4-37">
-                                        </div>
+                                <div>
+                                    <label for="name-form-id">
+                                        <span>
+                                            <p>Имя</p>
+                                        </span>
+                                    </label>
+                                    <div>
+                                        <input type="text" class="form-control" name="name" id="name-form-id">
                                     </div>
-                                    <div class="cfg-clear"></div>
                                 </div>
-
-                                <div class="cfg-element-container">
-                                    <label class="cfg-label" id="cfg-element-4-34-label"><span class="cfg-label-value"><p>Email address</p> </span></label>
-                                    <div class="cfg-element-set" id="cfg-element-4-34-set">
-                                        <div class="cfg-element-content">
-                                            <input type="text" class="cfg-type-text cfg-form-value" name="email" id="cfg-element-4-34">
-                                        </div>
+                                <div>
+                                    <label for="tel-form-id">
+                                        <span>
+                                            <p>Телефон</p>
+                                        </span>
+                                    </label>
+                                    <div>
+                                        <input type="text" class="form-control" name="tel" id="tel-form-id">
                                     </div>
-                                    <div class="cfg-clear"></div>
                                 </div>
-
-
-
-                                <div class="cfg-loading">&nbsp;</div>
-
+                                <div>
+                                    <label for="email-form-id">
+                                        <span>
+                                            <p>Email</p>
+                                        </span>
+                                    </label>
+                                    <div>
+                                        <input type="text" class="form-control" name="email" id="email-form-id">
+                                    </div>
+                                </div>
                             </div><!-- cfg-contactform-content -->
                         </div><!-- cfg-contactform -->
 
@@ -387,78 +532,67 @@
 
 
                     <div class="eight columns contact-form">
-                        <div class="cfg-element-container">
-                            <label class="cfg-label" id="cfg-element-4-35-label"><span class="cfg-label-value"><p>Your message</p></span></label>
-                            <div class="cfg-element-set" id="cfg-element-4-35-set">
-                                <div class="cfg-element-content">
-                                    <textarea class="cfg-type-textarea cfg-form-value" name="message" id="cfg-element-4-35" rows="6"></textarea>
-                                </div>
-                            </div>
-                            <div class="cfg-clear"></div>
-                        </div>
-                        <div class="cfg-element-container">
-                            <div class="cfg-element-set" id="cfg-element-4-36-set">
-                                <div class="cfg-element-content">
-                                    <input type="submit" class="cfg-submit form-submit-btn" name="cfg-element-4-36" id="cfg-element-4-36" value="Send">
-                                </div>
+                        <div>
+                            <label for="text-form-id">
+                                <span>
+                                    <p>Ваше сообщение</p>
+                                </span>
+                            </label>
+                            <div>
+                                <textarea class="form-control" name="message" id="text-form-id" rows="10"></textarea>
                             </div>
                         </div>
                     </div> <!-- end eight columns -->
-                
+
                 </form>
 
             </div>
-			
+
 			<div class="clear"></div>
-			
+
 			<div class="sixteen columns">
 				<div class="copyright">
 					<p><i class="fa fa-copyright"></i> 2012 Сделано с <i class="fa fa-heart"></i></p>
 				</div>
 			</div>
-			
-			
+
 		</div> <!-- end container -->
-		
+
 	</div> <!-- end contact -->
-	
-
-	
-
 
 	<!-- JS
 	================================================== -->
-    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script src="{{ static('scripts/903ac332.plugins.js') }}"></script>
+    <script src="{{ static('scripts/af281623.vendor.js') }}"></script>
 
-    <script src="{{ static('scripts/cfa0f88a.vendor.js') }}"></script>
+    <script src="{{ static('scripts/7f326f3f.plugins.js') }}"></script>
 
-    <script src="{{ static('scripts/13bf60ed.main.js') }}"></script>
-	
+
+    <script src="{{ static('scripts/bbbe9651.main.js') }}"></script>
+
 	<!-- Contact Form
 	================================================== -->
     <!--<script src="cfg-contactform-4/js/contactform.js"></script>-->
     <!--<link href="cfg-contactform-4/css/contactform.css" rel="stylesheet" type="text/css" />-->
-	
+
 	<!-- Sticky nav -->
 	<script>
 		$(document).ready(function(){
 			$("nav").sticky({topSpacing:0});
 		});
 	</script>
-	
-	
-	<!-- dropdown menu -->
-	<script type="text/javascript">
-    	function scrollTo(target){
-        	var targetPosition = $(target).offset().top;
-        	$('html,body').animate({ scrollTop: targetPosition}, 'slow');
-        }
-    </script>
-	
-	
-	
-	<!-- slider -->
+
+
+  <!-- dropdown menu -->
+  <script type="text/javascript">
+    function scrollTo(target){
+        var targetPosition = $(target).offset().top;
+        $('html,body').animate({ scrollTop: targetPosition}, 'slow');
+    }
+  </script>
+
+
+
+	<!-- slider 
 	<script>
 		$(window).load(function() {
 			$('.flexslider').flexslider({
@@ -468,24 +602,54 @@
 				animationSpeed: 1000
 			});
 		});
-	</script>
-	
-	<!-- pretty photo 
-	<script>
-		$(document).ready(function(){
-			$("a[class^='prettyPhoto']").prettyPhoto({
-				social_tools: false,
-				theme: 'light_square'
-			});
-		});
-	</script>
-	-->
-	
+	</script>    -->
+
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
 			$("a[rel^='prettyPhoto']").prettyPhoto({
 				social_tools: false,
-				theme: 'light_square'
+				theme: 'light_square',
+        markup: '<div class="pp_pic_holder"> \
+						<div class="ppt">&nbsp;</div> \
+						<div class="pp_top"> \
+							<div class="pp_left"></div> \
+							<div class="pp_middle"></div> \
+							<div class="pp_right"></div> \
+						</div> \
+						<div class="pp_content_container"> \
+							<div class="pp_left"> \
+							<div class="pp_right"> \
+								<div class="pp_content"> \
+									<div class="pp_loaderIcon"></div> \
+									<div class="pp_fade"> \
+										<a href="#" class="pp_expand" title="На полный экран">Expand</a> \
+										<div class="pp_hoverContainer"> \
+											<a class="pp_next" href="#">next</a> \
+											<a class="pp_previous" href="#">previous</a> \
+										</div> \
+										<div id="pp_full_res"></div> \
+										<div class="pp_details"> \
+											<div class="pp_nav"> \
+												<a href="#" class="pp_arrow_previous">Previous</a> \
+												<p class="currentTextHolder">0/0</p> \
+												<a href="#" class="pp_arrow_next">Next</a> \
+											</div> \
+											<p class="pp_description"></p> \
+											{pp_social} \
+                      <a class="pp_close" title="Закрыть" href="#">Close</a> \
+										</div> \
+									</div> \
+								</div> \
+							</div> \
+							</div> \
+						</div> \
+						<div class="pp_bottom"> \
+							<div class="pp_left"></div> \
+							<div class="pp_middle"></div> \
+							<div class="pp_right"></div> \
+						</div> \
+					</div> \
+					<div class="pp_overlay"></div>'
 			});
 		});
 	</script>
@@ -494,4 +658,5 @@
 <!-- End Document
 ================================================== -->
 </body>
+
 </html>

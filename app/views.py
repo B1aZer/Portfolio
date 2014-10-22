@@ -15,14 +15,13 @@ def send_view():
     form = {}
     for nv in data:
         form[nv['name']] = nv['value']
-    msg = Message(
-                  form['name'],
-               sender=form['email'],
-               recipients=
-                   ['dmitry.branitskiy@gmail.com'])
-    msg.body = form['message']
+    subj = form.get('name') + ' ' + form.get('tel') + ' ' + form.get('email')
+    recipients = [app.config['EMAIL_SEND_TO']]
+    sender = form.get('email') or app.config['EMAIL_SEND_TO']
+    msg = Message( subj, sender=sender, recipients=recipients)
+    msg.body = form.get('message')
     try:
         mail.send(msg)
     except:
-        result.status = False
+        result['status'] = False
     return jsonify(result)

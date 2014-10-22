@@ -354,6 +354,10 @@ nav li a:hover {
   background-size: 100% auto;
 }
 
+#intro .bg1 {
+  background-size: cover;
+}
+
 .title {
   position: fixed;
   top: 15%;
@@ -721,7 +725,8 @@ span.p-small {
 .copyright {
   border-top: 1px solid #858585;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
+  margin-top: 15px;
 }
 
 .copyright p {
@@ -752,10 +757,6 @@ span.p-small {
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 1024px) {
 
-  #intro .bg1 {
-    background-size: cover;
-  }
-
   .title {
     position: relative;
   }
@@ -764,6 +765,9 @@ span.p-small {
     height: 500px;
   }
 
+  p.separator {
+    padding-top: 200px;
+  }
 
   .intro-line {
     width: 708px;
@@ -786,9 +790,15 @@ span.p-small {
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
   .separators {
     height: 400px;
   }
+
+  p.separator {
+    padding-top: 150px;
+  }
+
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -816,6 +826,10 @@ span.p-small {
     width: 362px;
   }
 
+  .long-line {
+    line-height: 134%;
+  }
+
   nav ul li {
     padding-left: 10px;
     padding-right: 10px;
@@ -824,6 +838,19 @@ span.p-small {
   .separators {
     height: 300px;
   }
+
+  p.separator {
+    padding-top: 100px;
+  }
+
+  .portfolio .thumb .port-link {
+    margin-bottom: 10px;
+  }
+
+  #contact-form-id input {
+    width: 94%;
+  }
+
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -861,7 +888,6 @@ span.p-small {
     line-height: 28px;
   }
 
-
   nav ul li {
     padding-left: 5px;
     padding-right: 5px;
@@ -875,6 +901,14 @@ span.p-small {
     background-attachment: scroll;
     background-position: top center !important;
     background-size: cover;
+  }
+
+  .portfolio .thumb .port-link {
+    margin-bottom: 5px;
+  }
+
+  #contact-form-id input {
+    width: 91%;
   }
 
 }

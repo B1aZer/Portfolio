@@ -1,4 +1,8 @@
 .DS_Store
+app/bower_components/
+.tmp
+node_modules
+dist
 *~
 *.pyc
 logs/

@@ -14,5 +14,8 @@
   "authors": [
     "Dmitry Branitskiy <dmitry.branitskiy@gmail.com>"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "modernizr": "~3.1.0"
+  }
 }

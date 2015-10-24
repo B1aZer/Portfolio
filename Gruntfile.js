@@ -321,15 +321,20 @@ module.exports = function (grunt) {
             }
         },
         modernizr: {
-            devFile: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
+          dist: {
+            devFile: '<%= yeoman.app %>/bower_components/modernizr/dist/modernizr-build.js',
             outputFile: '<%= yeoman.dist %>/bower_components/modernizr/modernizr.js',
-            files: [
+            files: {
+              "src": [
                 '<%= yeoman.dist %>/scripts/{,*/}*.js',
                 '<%= yeoman.dist %>/styles/{,*/}*.css',
                 '!<%= yeoman.dist %>/scripts/vendor/*'
-            ],
+              ]
+            },
             uglify: true
+          }
         },
+        eol: { dist: { options: { eol: 'lf', replace: true }, files: [{ src: ['<%= yeoman.dist %>/*.html'], }] } },
         concurrent: {
             server: [
                 'compass',
@@ -380,6 +385,7 @@ module.exports = function (grunt) {
         'clean:dist',
         'useminPrepare',
         'concurrent:dist',
+        'eol',
         'autoprefixer',
         'concat',
         'cssmin',
